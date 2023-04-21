@@ -1,0 +1,13 @@
+using System;
+class Ex {
+  static void Main() {
+    int x = Convert.ToInt32(Console.ReadLine());
+    int y = Convert.ToInt32(Console.ReadLine());
+    int R = Convert.ToInt32(Console.ReadLine());
+    R = Math.Abs(R);
+    if  ((x < R) && (y < R)) 
+        Console.WriteLine("Точка лежит в кругу");
+    else 
+        Console.WriteLine("Точка не лежит в кругу");
+  }
+}
