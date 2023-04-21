@@ -1,0 +1,25 @@
+using System;
+class Ex {
+  static void Main() {
+    double e = 2.71828;
+    double a = 0;
+    double W = 0;
+    double m = Convert.ToDouble(Console.ReadLine());
+    double n = Convert.ToDouble(Console.ReadLine());
+    double b = Convert.ToDouble(Console.ReadLine());
+    double beta = Convert.ToDouble(Console.ReadLine());
+    if (m>n) 
+        a = m;
+    if (m<=n)
+        a = Math.Pow(n,2);
+    
+    if (a > b) 
+        a = a ;
+    if (a==b)
+        a = Math.Pow(b,2)+5;
+    if (a<b)
+        a = b;
+    W = Math.Pow(Math.Tan(a),2) - beta * Math.Cos(beta) + Math.Sqrt(beta - a*Math.Cos(a)) + Math.Pow(e,a);    
+    Console.WriteLine(W);
+  }
+}
